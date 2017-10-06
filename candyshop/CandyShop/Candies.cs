@@ -8,5 +8,8 @@ namespace CandyShop
 {
     class Candies
     {
+        public int price;
+        public int amountOfSugar;
+        public string type;
     }
 }
