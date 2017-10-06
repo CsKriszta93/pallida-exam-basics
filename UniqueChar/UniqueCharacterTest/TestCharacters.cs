@@ -22,5 +22,13 @@ namespace UniqueCharacterTest
             output.Add('a');
             Assert.AreEqual(output, UniqueCharClass.UniqueCharacters(input));
         }
+        [Test]
+        public void TestForTwoLetter()
+        {
+            UniqueCharClass twoLetterTest = new UniqueCharClass();
+            string input = "blabla";
+            bool output = true;
+            Assert.AreEqual(output, UniqueCharClass.Letters(UniqueCharClass.UniqueCharacters(input)));
+        }
     }
 }

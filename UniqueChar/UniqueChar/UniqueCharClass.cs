@@ -23,6 +23,13 @@ namespace UniqueChar
             return characters;
         }
 
+        public static bool Letters(List<char> list)
+        {
+            string input = "blabla";
+            List<char> Letters = UniqueCharacters(input);
+            return Letters[0] == 'b';          
+        }
+
         static void Main(string[] args)
         {
             // Create a method called `UniqueCharacters` that takes a string as parameter
