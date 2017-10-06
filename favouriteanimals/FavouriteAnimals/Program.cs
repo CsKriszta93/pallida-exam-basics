@@ -37,17 +37,15 @@ namespace FavouriteAnimals
 
         public static void StoreAnimal(string[] args)
         {
-            args.ToString();
-            StreamReader checkAnimal = new StreamReader(path);
-            string line = checkAnimal.ReadLine();
-            fo
-            if (lines.(args))
+            string animal = args.ToString();
+            List<string> existingFavorites = ListOfAnimals();
+            if (existingFavorites.Contains(animal))
             {
                 Console.WriteLine("This animal is already in the file.");
             }
             else
             {
-                AddFavoriteAnimal(animal);          
+                AddFavoriteAnimal(args);          
             }
         }
 
