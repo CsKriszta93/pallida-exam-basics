@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace UniqueChar
 {
-    class Program
+    public class UniqueCharClass
     {
         public static List<char> UniqueCharacters(string input)
         {
@@ -34,7 +35,7 @@ namespace UniqueChar
             Letters = UniqueCharacters(input);
             foreach (char letter in Letters)
             {                
-                Console.WriteLine(letter);
+                Console.Write(letter);
             }
             Console.ReadLine();
         }
