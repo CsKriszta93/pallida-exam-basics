@@ -26,7 +26,6 @@ namespace CandyShop
             return sugar;
         }
         
-
         public CreateSweets()
         {
 
@@ -36,13 +35,13 @@ namespace CandyShop
         {
             foreach (Sweets candy in storage)
             {
-                Console.WriteLine("Inventory: );
+                Console.WriteLine("Inventory: {0} {1} {2} {3} {4}, Income: {5}, Sugar {6}", candy.givenAmount, candy.type,  );
             }
         }
 
-        public Sell()
+        public int Sell(int amount)
         {
-
+            income += 
         }
 
         public Raise(int raise)
