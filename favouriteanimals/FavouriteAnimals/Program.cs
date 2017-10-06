@@ -68,9 +68,8 @@ namespace FavouriteAnimals
 
             if (args.Length > 0)
             {
-
+                StoreAnimal(args);
             }
-        }
-        
+        }       
     }
 }
