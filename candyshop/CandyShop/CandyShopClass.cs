@@ -6,16 +6,45 @@ using System.Threading.Tasks;
 
 namespace CandyShop
 {
-    public class CandyShopClass
+    public class CandyShopClass : Sweets
     {
-        List<Candies> storage = new List<Candies>();
+        public List<Sweets> storage = new List<Sweets>();
         public int sugar;
         public int income;
 
-        public CandyShopClass(int sugar, int income)
+   
+
+        public CandyShopClass(int sugar)
         {
             this.sugar = sugar;
-            this.income = income;
+        }
+
+        public CreateSweets()
+        {
+
+        }
+
+        public PrintInfo()
+        {
+            foreach (Sweets candy in storage)
+            {
+                Console.WriteLine("Inventory: );
+            }
+        }
+
+        public Sell()
+        {
+
+        }
+
+        public Raise(int raise)
+        {
+
+        }
+
+        public BuySugar(int amount)
+        {
+
         }
     }
 }

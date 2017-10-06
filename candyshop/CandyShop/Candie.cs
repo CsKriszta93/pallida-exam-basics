@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace CandyShop
 {
-    class Candies
+    class Candie
     {
-        public int price;
-        public int amountOfSugar;
-        public string type;
     }
 }
