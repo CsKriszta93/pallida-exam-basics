@@ -9,22 +9,48 @@ namespace FavouriteAnimals
 {
     class Program
     {
+        public static string path = @"../favourites.txt";
+
         public static void NoArguments()
         {
             string usage = "'''C# FavouriteAnimals [animal] [animal]'''";
             Console.WriteLine(usage);
         }
 
-        public static void AddFavoriteAnimal(string input)
+        public static void AddFavoriteAnimal(string[] args)
         {
-            StreamWriter addAnimal = new StreamWriter(@"../favourites.txt");
-            addAnimal.WriteLine(input);
+            StreamWriter addAnimal = new StreamWriter(path);
+            addAnimal.WriteLine(args);
         }
 
-        public static void StoreAnimal()
+        public static List<string> ListOfAnimals()
         {
-            StreamReader checkAnimal = new StreamReader
+            StreamReader animals = new StreamReader(path);
+            List<string> listofAnimals = new List<string>();
+            string line = animals.ReadLine();
+            while (line != null)
+            {
+                listofAnimals.Add(line);
+            }
+            return listofAnimals;
         }
+
+        public static void StoreAnimal(string[] args)
+        {
+            args.ToString();
+            StreamReader checkAnimal = new StreamReader(path);
+            string line = checkAnimal.ReadLine();
+            fo
+            if (lines.(args))
+            {
+                Console.WriteLine("This animal is already in the file.");
+            }
+            else
+            {
+                AddFavoriteAnimal(animal);          
+            }
+        }
+
         static void Main(string[] args)
         {
             // The program's aim is to collect your favourite animals and store them in a text file.
@@ -40,6 +66,11 @@ namespace FavouriteAnimals
             if (args.Length == 0)
             {
                 NoArguments();
+            }
+
+            if (args.Length > 0)
+            {
+
             }
         }
         
